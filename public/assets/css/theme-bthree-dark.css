@@ -1,0 +1,471 @@
+/* bthree dark theme */
+gitea-theme-meta-info {
+  --theme-display-name: "Bthree Dark";
+  --theme-color-scheme: "dark";
+}
+
+:root {
+  --is-dark-theme: true;
+  /* Colors */
+  color-scheme: dark;
+
+  --color-primary: hsl(204deg, 90%, 60%);
+  --color-primary-hover: hsl(204deg, 90%, 50%);
+  --color-primary-active: hsl(204deg, 90%, 45%);
+  --color-primary-bg: hsla(204deg, 100%, 36%, .6);
+  --color-primary-text: hsl(204deg, 90%, 72%);
+  --color-primary-contrast: #ffffff;
+
+  --color-primary-dark-1: #14a1ff;
+  --color-primary-dark-2: #47b6ff;
+  --color-primary-dark-3: #66c2ff;
+  --color-primary-dark-4: #8fd2ff;
+  --color-primary-dark-5: #addeff;
+  --color-primary-dark-6: #c7e9ff;
+  --color-primary-dark-7: #e0f3ff;
+
+  --color-primary-light-1: #007acc;
+  --color-primary-light-2: #006eb8;
+  --color-primary-light-3: #005c99;
+  --color-primary-light-4: #005085;
+  --color-primary-light-5: #003d66;
+  --color-primary-light-6: #003152;
+  --color-primary-light-7: #001f33;
+
+  --color-primary-alpha-10: #008deb1a;
+  --color-primary-alpha-20: #008deb33;
+  --color-primary-alpha-30: #008deb4d;
+  --color-primary-alpha-40: #008deb66;
+  --color-primary-alpha-50: #008deb80;
+  --color-primary-alpha-60: #008deb99;
+  --color-primary-alpha-70: #008debb3;
+  --color-primary-alpha-80: #008debcc;
+  --color-primary-alpha-90: #008debe6;
+
+  --color-secondary: hsl(213, 12%, 30%);
+  --color-secondary-bg: hsl(213, 16%, 20%);
+  --color-secondary-button: var(--color-secondary-dark-4);
+  --color-secondary-hover: var(--color-secondary-dark-3);
+  --color-secondary-active: var(--color-secondary-dark-2);
+
+  --color-secondary-dark-1: hsl(213, 12%, 35%);
+  --color-secondary-dark-2: hsl(213, 12%, 40%);
+  --color-secondary-dark-3: hsl(213, 12%, 50%);
+  --color-secondary-dark-4: hsl(213, 12%, 55%);
+  --color-secondary-dark-5: hsl(213, 12%, 60%);
+  --color-secondary-dark-6: #9aa3af;
+  --color-secondary-dark-7: hsl(213, 12%, 69%);
+  --color-secondary-dark-8: hsl(213, 12%, 74%);
+  --color-secondary-dark-9: hsl(213, 11%, 79%);
+  --color-secondary-dark-10: hsl(213, 11%, 84%);
+  --color-secondary-dark-11: hsl(213, 12%, 89%);
+  --color-secondary-dark-12: hsl(213, 12%, 94%);
+  --color-secondary-dark-13: hsl(213, 14%, 98%);
+
+  --color-secondary-light-1: hsl(213, 12%, 24%);
+  --color-secondary-light-2: hsl(213, 12%, 18%);
+  --color-secondary-light-3: hsl(213, 11%, 12%);
+  --color-secondary-light-4: hsl(213, 8%, 6%);
+
+  --color-secondary-alpha-10: hsla(213, 12%, 31%, 0.1);
+  --color-secondary-alpha-20: hsla(213, 12%, 31%, 0.2);
+  --color-secondary-alpha-30: hsla(213, 12%, 31%, 0.3);
+  --color-secondary-alpha-40: hsla(213, 12%, 31%, 0.4);
+  --color-secondary-alpha-50: hsla(213, 12%, 31%, 0.5);
+  --color-secondary-alpha-60: hsla(213, 12%, 31%, 0.6);
+  --color-secondary-alpha-70: hsla(213, 12%, 31%, 0.7);
+  --color-secondary-alpha-80: hsla(213, 12%, 31%, 0.8);
+  --color-secondary-alpha-90: hsla(213, 12%, 31%, 0.9);
+
+  --color-console-fg: #f8f8f8;
+  --color-console-fg-subtle: #c1c3c8;
+  --color-console-bg: #191a1c;
+  --color-console-border: #313338;
+  --color-console-hover-bg: #2a2c30;
+  --color-console-active-bg: #313338;
+  --color-console-menu-bg: #292b2e;
+  --color-console-menu-border: #46494f;
+  --color-console-link: #969aa1;
+
+  /* Colors for buttons, labels, etc */
+  --color-red: hsl(0, 56.4%, 54.1%);
+  --color-red-light: hsl(0, 56.5%, 48.6%);
+  --color-red-dark-1: hsl(3deg, 75%, 59%);
+  --color-red-dark-2: #ad3030;
+
+  --color-orange: hsl(23.8, 89%, 42.4%);
+  --color-orange-light: hsl(23.6, 88.7%, 38%);
+  --color-orange-dark-1: #f38236;
+  --color-orange-dark-2: #f16e17;
+
+  --color-yellow: hsl(44.8, 97%, 40.6%);
+  --color-yellow-light: hsl(44.8, 96.8%, 37%);
+  --color-yellow-dark-1: #b88a03;
+  --color-yellow-dark-2: #a37a02;
+
+  --color-olive: hsl(67.5, 79.1%, 36%);
+  --color-olive-light: hsl(67.4, 79.3%, 32%);
+  --color-olive-dark-1: #839311;
+  --color-olive-dark-2: #74820f;
+
+  --color-green: hsl(124deg 41% 35%);
+  --color-green-light: hsl(124deg 41% 45%);
+  --color-green-dark-1: #7a9e55;
+  --color-green-dark-2: #6c8c4c;
+
+  --color-teal: hsl(177, 100%, 28.4%);
+  --color-teal-light: hsl(176.8, 100%, 26%);
+  --color-teal-dark-1: #00837c;
+  --color-teal-dark-2: #00746e;
+
+  --color-blue: hsl(206, 56%, 50.2%);
+  --color-blue-light: hsl(206, 55%, 45.3%);
+  --color-blue-dark-1: hsl(213deg, 89%, 64%);
+  --color-blue-dark-2: #2e6e9f;
+  --color-blue-dark-bg: hsla(213deg, 89%, 64%, .15);
+
+  --color-violet: hsl(259.2, 66.5%, 65%);
+  --color-violet-light: hsl(259.1, 66.2%, 58%);
+  --color-violet-dark-1: hsl(262deg, 66%, 66%);
+  --color-violet-dark-2: #6733d6;
+  --color-violet-dark-bg: hsla(262deg, 66%, 66%, .15);
+
+  --color-purple: hsl(285, 55.9%, 58%);
+  --color-purple-light: hsl(285, 55.6%, 52%);
+  --color-purple-dark-1: #a742c9;
+  --color-purple-dark-2: #9834b9;
+
+  --color-pink: hsl(326, 64.6%, 50.2%);
+  --color-pink-light: hsl(326, 64.5%, 45%);
+  --color-pink-dark-1: #be297d;
+  --color-pink-dark-2: #a9246f;
+
+  --color-brown: hsl(23.4, 33%, 48%);
+  --color-brown-light: hsl(23.5, 33%, 43%);
+  --color-brown-dark-1: #94674a;
+  --color-brown-dark-2: #835b42;
+
+  --color-grey: hsl(213, 12%, 30%);
+  --color-grey-light: hsl(213, 12%, 40%);
+  --color-black: hsl(213, 21%, 15%);
+  --color-black-light: hsl(223, 20%, 13%);
+  --color-black-dark-1: #2e3033;
+  --color-black-dark-2: #292b2e;
+  --color-gold: hsl(47, 50%, 46.3%);
+  --color-white: #ffffff;
+
+  --color-ansi-black: var(--color-black);
+  --color-ansi-red: var(--color-red);
+  --color-ansi-green: var(--color-green);
+  --color-ansi-yellow: var(--color-yellow);
+  --color-ansi-blue: var(--color-blue);
+  --color-ansi-magenta: var(--color-pink);
+  --color-ansi-cyan: var(--color-teal);
+  --color-ansi-white: var(--color-console-fg-subtle);
+  --color-ansi-bright-black: var(--color-black-light);
+  --color-ansi-bright-red: var(--color-red-light);
+  --color-ansi-bright-green: var(--color-green-light);
+  --color-ansi-bright-yellow: var(--color-yellow-light);
+  --color-ansi-bright-blue: var(--color-blue-light);
+  --color-ansi-bright-magenta: var(--color-pink-light);
+  --color-ansi-bright-cyan: var(--color-teal-light);
+  --color-ansi-bright-white: var(--color-console-fg);
+
+  /* Color: diff */
+  --color-diff-added-fg: var(--color-green);
+  --color-diff-added-linenum-bg: var(--color-diff-added-row-linesnum-bg);
+  --color-diff-added-word-bg: hsl(120, 25.5%, 32%);
+  --color-diff-added-row-bg: hsla(123, 36%, 43%, 0.1);
+  --color-diff-added-row-linesnum-bg: hsla(123, 36%, 40%, 0.2);
+  --color-diff-added-row-border: hsl(134.4, 20%, 24%);
+
+  --color-diff-removed-fg: var(--color-red);
+  --color-diff-removed-linenum-bg: var(--color-diff-removed-row-linesnum-bg);
+  --color-diff-removed-word-bg: hsl(0, 37%, 32%);
+  --color-diff-removed-row-bg: hsl(0, 20%, 20%);
+  --color-diff-removed-row-linesnum-bg: hsl(0, 25%, 23%);
+  --color-diff-removed-row-border: hsl(0, 19%, 33%);
+
+  --color-diff-moved-row-bg: hsl(59, 31%, 38.6%);
+  --color-diff-moved-row-border: hsl(69.2, 46%, 61%);
+  --color-diff-inactive: hsl(229, 14%, 13%);
+
+  /* Color: messages and status */
+  --color-error-border: hsl(0, 42%, 44.1%);
+  --color-error-bg: hsl(0, 42.9%, 23%);
+  --color-error-bg-active: hsl(0, 27.3%, 37%);
+  --color-error-bg-hover: hsl(0, 33.3%, 30%);
+  --color-error-text: hsl(0, 79.3%, 88.6%);
+  --color-success-border: hsl(136, 33.3%, 40.6%);
+  --color-success-bg: hsl(150, 23%, 20%);
+  --color-success-text: hsl(116, 46%, 58.4%);
+  --color-warning-border: hsl(50, 100%, 37%);
+  --color-warning-bg: hsl(60, 9.4%, 20.8%);
+  --color-warning-text: hsl(44.7, 96.8%, 50.8%);
+  --color-info-border: hsl(210, 50%, 37.6%);
+  --color-info-bg: hsl(216.3, 33.3%, 22.4%);
+  --color-info-text: hsl(213deg, 89%, 64%);
+
+  --color-priority-border: #4a268d;
+  --color-priority-bg: #251c39;
+  --color-priority-text: #a371f7;
+
+  --color-red-badge: var(--color-red);
+  --color-red-badge-bg: hsla(0, 56.4%, 54.1%, .1);
+  --color-red-badge-hover-bg: hsla(0, 56.4%, 54.1%, .3);
+  --color-green-badge: var(--color-green);
+  --color-green-badge-bg: hsla(124deg, 41%, 35%, .1);
+  --color-green-badge-hover-bg: hsla(124deg, 41%, 35%, .3);
+  --color-yellow-badge: var(--color-yellow);
+  --color-yellow-badge-bg: hsla(44.8, 97%, 40.6%, .1);
+  --color-yellow-badge-hover-bg: hsla(44.8, 97%, 40.6%, .3);
+  --color-orange-badge: var(--color-orange);
+  --color-orange-badge-bg: hsla(23.8, 89%, 42.4%, .1);
+  --color-orange-badge-hover-bg: hsla(23.8, 89%, 42.4%, .3);
+
+  --color-git: #f05133;
+  --color-logo: #609926;
+
+  --color-body: #202327;
+
+  --color-box-header: hsl(213, 12%, 22%);
+  --color-box-body: hsl(213, 12%, 18%);
+  --color-box-body-highlight: hsla(204deg, 60%, 15%, .15);
+
+  --color-text: #bbc0ca;
+  --color-text-dark: hsl(220, 26%, 89%);
+  --color-text-light: hsl(224, 9.2%, 68%);
+  --color-text-light-1: hsl(224, 7.8%, 62%);
+  --color-text-light-2: hsl(224, 6.8%, 57%);
+  --color-text-light-3: hsl(224.3, 9.3%, 48.4%);
+
+  /* "color-light" is actually a subtle black in dark themes, to darken an element.
+   * against different backgrounds.  */
+  --color-light: hsla(0, 0%, 0%, 0.2);
+  --color-light-mimic-enabled: rgba(0, 0, 0, calc(40 / 255 * 222 / 255 / var(--opacity-disabled)));
+  --color-light-border: hsla(0, 0%, 100%, 0.2);
+
+  --color-hover: hsla(213, 18%, 90%, .05);
+  --color-hover-opaque: #232528;
+  --color-active: hsla(213, 18%, 90%, .1);
+
+  --color-menu: hsl(213, 12%, 21%);
+  --color-card: #202327;
+  --color-timeline: #383b40;
+
+  --color-markup-table-row: hsla(0, 0%, 100%, 0);
+  --color-markup-code-block: hsla(0, 0%, 100%, 0.1);
+  --color-markup-code-inline: hsla(0, 0%, 100%, 0.1);
+
+  --color-code-bg: #1e2329;
+  --color-code-line-bg-hover: hsl(213, 16%, 16%);
+  --color-code-sidebar-bg: hsl(213, 15%, 21%);
+
+  --color-shadow: #0b0b0c58;
+  --color-shadow-opaque: #0b0b0c;
+
+  --color-tooltip-text: #fbfdff;
+  --color-tooltip-bg: #000017f0;
+
+  /* Navbar */
+  --color-nav-bg: hsl(213, 10%, 18%);
+  --color-nav-hover-bg: hsla(213, 18%, 90%, .05);
+  --color-nav-text: var(--color-text);
+  --color-secondary-nav-bg: hsl(213, 10%, 16%);
+
+  /* Inputs */
+  --color-input-text: #d6dbe6;
+  --color-input-background: #17191c;
+  --color-input-toggle-background: #454d57;
+  --color-input-border: #454d57;
+  --color-input-border-hover: #505668;
+  --color-placeholder-text: #6a737d;
+
+  --color-editor-line-highlight: var(--color-primary-light-5);
+  --color-editor-selection: var(--color-primary-alpha-50);
+  --color-project-column-bg: var(--color-secondary-light-2);
+  --color-expand-button: #333539;
+
+  --color-highlight-fg: #87651e;
+  --color-highlight-bg: #352c1c;
+  --color-overlay-backdrop: #080808c0;
+
+  --color-button: #282d33;
+
+  --color-caret: var(--color-text);
+  --color-border: var(--color-secondary-alpha-40);
+
+  --color-reaction-bg: hsla(0, 0%, 100%, 0.1);
+  --color-reaction-hover-bg: var(--color-primary-light-4);
+  --color-reaction-active-bg: var(--color-primary-alpha-30);
+
+  --color-small-accent: var(--color-primary-light-5);
+  --color-active-line: hsl(53.6, 50.9%, 22%);
+  
+  /* Labels. e.g. issues count indicator in repo tabs */
+  --color-label-text: var(--color-text-light);
+  --color-label-bg: var(--color-secondary-alpha-60);
+  --color-label-hover-bg: hsl(220, 10.6%, 28%);
+  --color-label-active-bg: hsl(220, 10.6%, 33.3%);
+
+  /* Footer */
+  --color-footer: hsl(213, 14.8%, 21%);
+  --color-footer-text: var(--color-text-light-3);
+  --color-footer-links: var(--color-text-light-1);
+
+  /* Color aliases */
+  --color-danger: var(--color-red);
+  --color-transparency-grid-light: #2a2a2a;
+  --color-transparency-grid-dark: #1a1a1a;
+  --color-workflow-edge-hover: #666a73;
+
+  --color-accent: var(--color-primary);
+  accent-color: var(--color-accent);
+
+  /* Syntax colors */
+  --color-syntax-keyword: #ff8854;
+  --color-syntax-bool: #25bbc9;
+  --color-syntax-control: #dd9e17;
+  --color-syntax-name: #c7a618;
+  --color-syntax-type: #eb8cb3;
+  --color-syntax-number: #649bc4;
+  --color-syntax-operator: #6cb6ff;
+  --color-syntax-regexp: #9075cd;
+  --color-syntax-string: #b8bb26;
+  --color-syntax-comment: #777e94;
+  --color-syntax-invalid: #ff4433;
+  --color-syntax-link: var(--color-primary);
+  --color-syntax-tag: #ff7540;
+  --color-syntax-attribute: #c792ff;
+  --color-syntax-property: #55afff;
+  --color-syntax-variable: #ebdbb2;
+  --color-syntax-string-special: #ffaa10;
+  --color-syntax-escape: #ff7540;
+  --color-syntax-entity: #c792ff;
+  --color-syntax-preproc: #8ec07c;
+  --color-syntax-preproc-file: #649bc4;
+  --color-syntax-decorator: #dcbdfb;
+  --color-syntax-namespace: #ffaa10;
+  --color-syntax-name-pseudo: #fabd2f;
+  --color-syntax-comment-special: #9075cd;
+  --color-syntax-text: #adbac7;
+  --color-syntax-text-alt: #b6bac5;
+  --color-syntax-punctuation: #d2d4db;
+  --color-syntax-whitespace: #7f8699;
+  --color-syntax-diff-fg: #ffffff;
+  --color-syntax-deleted-bg: #5f3737;
+  --color-syntax-inserted-bg: #3a523a;
+  --color-syntax-emph: #ddee30;
+  --color-syntax-strong: #ebdbb2;
+  --color-syntax-heading: #ffaa10;
+  --color-syntax-subheading: #b8bb26;
+  --color-syntax-output: #777e94;
+  --color-syntax-prompt: #ebdbb2;
+  --color-syntax-traceback: #ff7540;
+  --color-syntax-matching-bracket-bg: #00918a48;
+  --color-syntax-nonmatching-bracket-bg: #cc484848;
+}
+
+.emoji[aria-label="check mark"],
+.emoji[aria-label="currency exchange"],
+.emoji[aria-label="TOP arrow"],
+.emoji[aria-label="END arrow"],
+.emoji[aria-label="ON! arrow"],
+.emoji[aria-label="SOON arrow"],
+.emoji[aria-label="heavy dollar sign"],
+.emoji[aria-label="copyright"],
+.emoji[aria-label="registered"],
+.emoji[aria-label="trade mark"],
+.emoji[aria-label="multiply"],
+.emoji[aria-label="plus"],
+.emoji[aria-label="minus"],
+.emoji[aria-label="divide"],
+.emoji[aria-label="curly loop"],
+.emoji[aria-label="double curly loop"],
+.emoji[aria-label="wavy dash"],
+.emoji[aria-label="paw prints"],
+.emoji[aria-label="musical note"],
+.emoji[aria-label="musical notes"] {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+/* Button overrides */
+.ui.primary.button,
+.ui.primary.buttons .button {
+  background-color: var(--color-primary-bg) !important;
+  border-color: var(--color-primary-bg) !important;
+  color: var(--color-primary-text) !important;
+}
+
+a.ui.primary.label:hover,
+.ui.primary.button:hover,
+.ui.primary.buttons .button:hover {
+  background-color: var(--color-primary-hover) !important;
+  color: var(--color-primary-contrast) !important;
+}
+
+.ui.primary.label {
+  background-color: var(--color-primary-bg) !important;
+  border-color: var(--color-primary-bg) !important;
+  color: var(--color-primary) !important;
+}
+
+/* Code syntax highlighting */
+.tag-code .code-inner {
+  opacity: .5;
+}
+
+.same-code .lines-num.lines-num-old,
+.same-code .lines-num.lines-num-new {
+  color: var(--color-text-light-3) !important;
+}
+
+.add-code .lines-num.lines-num-old,
+.add-code .lines-num.lines-num-new {
+  background-color: var(--color-diff-added-row-linesnum-bg);
+  color: var(--color-text-dark-2) !important;
+}
+
+.del-code .lines-num.lines-num-old,
+.diff-unified .del-code .lines-num.lines-num-old,
+.del-code .lines-num.lines-num-new {
+  background-color: var(--color-diff-removed-row-linesnum-bg);
+  color: var(--color-text-dark-2) !important;
+}
+
+.repository .diff-file-box .file-body.file-code table tbody tr.add-code:hover .lines-num,
+.repository .diff-file-box .file-body.file-code table tbody tr.del-code:hover .lines-num,
+.repository .diff-file-box .file-body.file-code table tbody tr.same-code:hover .lines-num,
+.repository .diff-file-box .file-body.file-code table tbody .diff-unified tr:hover .del-code .lines-num {
+  color: var(--color-text-dark) !important;
+}
+
+.repository .diff-file-box .file-body.file-code table tbody tr.same-code:hover .lines-num {
+  color: var(--color-text-dark-2) !important;
+}
+
+.repository .diff-file-box .file-body.file-code table tbody tr.same-code:hover .lines-code,
+.repository .diff-file-box .file-body.file-code table tbody tr.same-code:hover .lines-num,
+.repository .diff-file-box .file-body.file-code table tbody tr.same-code:hover .lines-type-marker {
+  background-color: var(--color-code-line-bg-hover) !important;
+}
+
+/*  fix: UI: Gitea code editor uses the same colors for current line indicator and text selection highlighting */
+.code-editor-container .cm-editor .cm-line ::selection,
+.code-editor-container .cm-editor .cm-line::selection {
+  background-color: var(--color-editor-selection) !important;
+}
+
+/* progress bar */
+progress::-moz-progress-bar,
+progress::-webkit-progress-value {
+  background-color: var(--color-primary);
+}
+
+.issue-list-toolbar-left a.item {
+  opacity: 50%;
+}
+
+.issue-list-toolbar-left a.active.item {
+  opacity: 100%;
+}

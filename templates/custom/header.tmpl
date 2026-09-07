@@ -1,0 +1,215 @@
+<style>
+  :root {
+    --border-radius: .33rem;
+    --transition-speed: 150ms;
+
+    --color-timeline: var(--color-secondary);
+  }
+
+  /* Light-theme specific. */
+  .theme-gitea {
+    --color-primary: hsl(204deg, 90%, 52%);
+  }
+
+  /* Revert the red color in dashboard header buttons. */
+  .dashboard.feeds .right.stackable.menu>.item.active,
+  .dashboard.issues .right.stackable.menu>.item.active {
+    color: unset;
+  }
+
+  /* Global tweaks (all themes) */
+  /* Buttons. */
+  .ui.button,
+  a.ui.label {
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+
+  /* Avatars. */
+  img.ui.avatar {
+    border-radius: 50%;
+  }
+
+  /* Emoji. */
+  .markup .emoji {
+    margin-right: .075em;
+    vertical-align: -.075em;
+  }
+
+  /* Hide the app logo (first link in "brand" div). */
+  .following.bar #navbar .brand > a:first-child {
+    display: none;
+  }
+
+  /* Dim the "header" of sections in dropdown menus. */
+  .ui.dropdown .menu>.header:not(.ui) {
+    color: var(--color-text-light-3);
+  }
+
+  /* Markup. */
+  /* Slight highlight on strong and heading elements, to improve readability. */
+  .markup strong,
+  .markup h1, .markup h2, .markup h3, .markup h4, .markup h5, .markup h6 {
+    color: var(--color-text-dark);
+  }
+
+  /* Homepage. */
+  /* By default Gitea colors links green */
+  .home a {
+    color: var(--color-primary);
+  }
+
+  /* Hide brand navbar completely when not in mobile. */
+  @media (min-width: 768px) {
+    .following.bar #navbar .brand {
+      display: none;
+    }
+  }
+
+  /* Hide the navbar logo. */
+  #navbar #navbar-logo {
+    display: none;
+  }
+
+  @media (max-width: 1000px) {
+  .hide-on-mid {
+      display: none !important;
+    }
+  }
+
+  /* Repository page. */
+  .repository .file-view.markdown a {
+    color: var(--color-primary);
+  }
+
+  .repository .file-view .markup img {
+    border-radius: var(--border-radius);
+  }
+
+  /* Repository folder icon. */
+  .repository.file.list #repo-files-table tbody .svg.octicon-file-directory-fill {
+    color: currentColor;
+  }
+
+  /* Repository stats. */
+  .repository-summary-language-stats {
+    height: unset;
+  }
+
+  .repository .repository-summary .segment.language-stats {
+    height: 4px;
+  }
+
+  /* Repository: Activity page. */
+  .stats-table {
+    margin-bottom: var(--spacer);
+  }
+
+  /* Hide branches from PR list. */
+  .issue.list .branches {
+    display: none !important;
+  }
+
+  /* Footer. */
+  footer {
+    color: var(--color-footer-text);
+  }
+
+  footer a {
+    color: var(--color-footer-links);
+  }
+
+  /* Manual preview tweaks. */
+  .restructuredtext a {
+    color: var(--color-accent) !important;
+  }
+  .restructuredtext :is(section, dd) > div {
+    background-color: var(--color-markup-code-block);
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    padding: 0;
+    border-radius: 5px;
+  }
+  .restructuredtext section div > p:first-child {
+    font-weight: 700;
+  }
+  .restructuredtext section div * {
+    margin: 0 !important;
+  }
+  .restructuredtext section div > :is(p, dl) {
+    padding: 8px 12px;
+  }
+  .restructuredtext section div > ul {
+    padding-bottom: 12px;
+  }
+  .restructuredtext section dl dt {
+    font-style: normal;
+  }
+
+  /* Alert blocks. */
+  blockquote.attention-note {
+    background-color: var(--color-info-bg);
+    border-left-color: var(--color-blue-dark-1);
+  }
+  strong.attention-note, span.attention-note {
+    color: var(--color-blue-dark-1);
+  }
+
+  blockquote.attention-tip {
+    background-color: var(--color-success-bg);
+    border-left-color: var(--color-success-text);
+  }
+  strong.attention-tip, span.attention-tip {
+    color: var(--color-success-text);
+  }
+
+  blockquote.attention-important {
+    background-color: var(--color-violet-dark-bg);
+    border-left-color: var(--color-violet-dark-1);
+  }
+
+  strong.attention-important, span.attention-important {
+    color: var(--color-violet-dark-1);
+  }
+
+  blockquote.attention-warning {
+    background-color: var(--color-warning-bg);
+    border-left-color: var(--color-warning-text);
+  }
+
+  strong.attention-warning, span.attention-warning {
+    color: var(--color-warning-text);
+  }
+
+  blockquote.attention-caution {
+    background-color: var(--color-error-bg);
+    border-left-color: var(--color-red-dark-1);
+  }
+  strong.attention-caution, span.attention-caution {
+    color: var(--color-red-dark-1);
+  }
+
+  /* Make Navbar dropdown item left-aligned. Needed from Chromium v133.x. */
+  #navbar .dropdown .item {
+    justify-content: flex-start;
+  }
+
+  /* User badges */
+  .user-badges {
+    /* Some rules override Gitea defaults. */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; /* --spacer */
+    padding: 0;
+    width: 100%;
+  }
+
+  .user-badges li {
+    list-style: none;
+  }
+
+  /* New Issues */
+  span.help {
+    text-wrap: auto !important;
+  }
+</style>
