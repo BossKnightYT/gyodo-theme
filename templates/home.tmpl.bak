@@ -7,20 +7,9 @@
         <h2 class="ui header title">
           {{AppName}}
         </h2>
-		<center>
-        <h3>
-
-          Welcome to Gyodo!
-		  <br>
-
-        <h3>
-		<p>Here we host our assets, <br>
-			and anything we want to open source!  </p>
-		</center>
-		
-		
-		<p> <br><br><br><br> uhhh bossknight made this homepage, who is not great at this, this'll get prettier once more experienced hands touch it! </p>
-
+        <p>
+          Welcome to Gyodo. Explore the repositories below to get involved.
+        </p>
       </div>
     </div>
   </div>
